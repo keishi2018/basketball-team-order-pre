@@ -32,8 +32,15 @@
 	  <div class="images-box">
 		<div class="left-box">
 		  <a href="#">
+            <nav>
+                <router-link to="/">HOME</router-link>
+                <router-link to="/about">ABOUT</router-link>
+                <router-link to="/contact">CONTACT</router-link>
+            </nav>
+            <router-view/>
 			<img src="@/assets/a001.jpg" alt="">
 		  </a>
+
 		</div>
 
 		<div class="right-box">

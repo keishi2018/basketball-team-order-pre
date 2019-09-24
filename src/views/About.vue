@@ -1,24 +1,19 @@
-<div v-html="rawHtml"></div>
-
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Hello</title>
-  <meta charset="UTF-8">
-  <script src="vue.js"></script>
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="style.css"></link>
-</head>
-
-<body onload="initial();">
-  <h1>Vue.js</h1>
-  <div id="msg">
-    <p>{{ message }}</p>
-    <p v-html="message"></p>
-    <input type="text" v-model="text1">
-    <input type="button" v-on:click="doAction" value="click">
+<template>
+  <div class="home">
+    <HelloWorld msg="about"/>
+    
   </div>
-</body>
+  
+</template>
+<i class="fas fa-basketball-ball"></i>
+<script>
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
 
-</html>
+export default {
+  name: 'home',
+  components: {
+    HelloWorld
+  }
+}
+</script>

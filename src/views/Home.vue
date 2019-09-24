@@ -1,7 +1,6 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/basketball-ball-solid.svg">
-    <HelloWorld msg="test"/>
+  <div class="contact">
+    <HelloWorld msg="HOME"/>
     
   </div>
   
