@@ -18,14 +18,6 @@
 </template>
 
 <style>
-@charset "UTF-8";
-
-
-img {
-  max-width: 100%; /* これがないと画像がでかいときに親要素をはみ出してしまう */
-}
-
-/* ---- 自分がWeb制作する時のおまじない的なスタイル ここまで ---- */
 
 header{
 	background-color: white;
