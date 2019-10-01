@@ -1,79 +1,5 @@
 <template>
- <div id="app">
 
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>AKTR WEB SITE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="reboot.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<header>
-		<div class="header-top">
-			<div class="header-top-icon-left"><img alt="" src="@/assets/info-i.svg" ></div>
-			<p>冬期休暇のお知らせ</p><img src="@/assets/y-under.svg" alt="">
-		</div>
-		<div class="header-under">
-			<p class="hm-menu"><a href=""><img src="@/assets/hm.png" alt=""></a></p>
-			<h1 class="main-logo"><a href=""><img src="@/assets/header-logo.png" alt="logo"></a></h1>
-			<nav class="hd-sarch">
-					<ul>
-						<li><a href=""><img src="@/assets/magnify.svg" alt=""></a></li>
-						<li><a href=""><img src="@/assets/cart.svg" alt=""></a></li>
-					</ul>
-			</nav>
-		</div>
-</header>
-
-
-
-<footer>
-	<div class="footer-inner">
-			<div class="top-back">
-				<div class="top-back-inner">
-				<a href=""><img src="@/assets/y-top.svg" alt=""></a>
-			</div>
-		</div>
-
-		<div class="sns-icon">
-			<div class="sns-icon-inner">
-				<a href=""><img src="@/assets/instagram.svg" alt=""></a>
-				<a href=""><img src="@/assets/facebook.svg" alt=""></a>
-				<a href=""><img src="@/assets/twitter.svg" alt=""></a>
-			</div>
-		</div>
-
-		<div class="footer-menu">
-			<div class="footer-menu-inner">
-				<div id="footer-about"><p>ABOUT AKTR</p></div>
-				<div id="footer-shop"><p>取扱店舗</p></div>
-				<div id="footer-news"><p>NEWS</p></div>
-				<div id="footer-my"><p>MYページ</p></div>
-			</div>
-		</div>
-
-		<div class="footer-info">
-			<div class="footer-info-inner">
-				<p>会員登録</p>
-				<p>利用ガイド</p>
-				<p>Q&A</p>
-				<p>特定商取引法に基づく表記</p>
-				<p>支払い方法</p>
-				<p>プライバシーポリシー</p>
-				<p>利用規約</p>
-				<p>お問い合わせ</p>
-			</div>
-		</div>
-
-		<div class="copyright">
-			copyright (c) AKTR all rights reserved.
-		</div>
-	</div>
-</footer>
-</html>
-  </div>
 </template>
 
 <style>
@@ -481,5 +407,16 @@ footer{
 	padding-bottom: 30px;
 }
 
-
 </style>
+
+<script>
+import header from "./components/header.vue";
+import footer from "./components/footer.vue";
+ 
+export default {
+components:{
+    'app-header': header,
+    'app-footer': footer
+  }
+}
+</script>
