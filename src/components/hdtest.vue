@@ -33,6 +33,7 @@
 </div>
 <!-- header - end -->
 
+<style>
 /* ------------------------------------ */
 //  リセット
 /* ------------------------------------ */
@@ -234,7 +235,9 @@ li
         right: -30px
         bottom: 0
         margin: auto
+</style>
 
+<script>
 new Vue({
   el: '#headerWrap',
   data: {
@@ -257,3 +260,4 @@ new Vue({
     },
   }
 });
+</script>
